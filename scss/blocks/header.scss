@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 110px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    font-size: $logo-font-size;
+    margin-left: 136px;
+
+    &-text {
+      font-weight: bold;
+
+      p {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+      }
+    }
+
+    img {
+      height: 45px;
+      width: 45px;
+    }
+  }
+
+  &__nav {
+    margin-top: 10px;
+    margin-left: 120px;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 25px;
+
+      li, a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+
+  button {
+    margin-left: 25px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: $button-font-size;
+    border: 1px solid black;
+  }
+
+  &__login-button {
+    background-color: white;
+  }
+
+  &__chat-button {
+    background-color: $button-primary-color;
+    color: $text-primary-color;
+  }
+}

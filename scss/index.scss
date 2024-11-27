@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'config';
+@import './blocks/main';
+@import './blocks/footer';
+@import './blocks/header';
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $text-secondary-color;
+  font-family: $primary-font;
+}
+
+body {
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  justify-content: center;
+}
+
+.wrapper {
+  width: 75%;
+  background-color: $background-color;
+}
