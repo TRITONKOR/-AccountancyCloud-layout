@@ -48,3 +48,51 @@ body {
   line-height: $lineheight;
   color: $textcolor;
 }
+
+// MESSAGES FOR ADAPTIVE DESIGN
+
+// For Tablets (max-width: 1024px)
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px; // Slightly smaller font on tablets
+  }
+
+  input,
+  textarea {
+    font-size: 14px; // Adjust input and textarea font size
+  }
+}
+
+// For Phones (max-width: 768px)
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; // Adjust font size for mobile screens
+  }
+
+  input,
+  textarea {
+    font-size: 14px; // Adjust input and textarea font size
+  }
+
+  // Making sure placeholders are legible on mobile
+  ::placeholder {
+    color: #888888;
+  }
+}
+
+// For Smaller Screens (max-width: 480px)
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; // Smaller font size for very small screens
+  }
+
+  input,
+  textarea {
+    font-size: 12px; // Smaller font size for inputs and textareas
+  }
+
+  // Adjust line-height for better readability on small devices
+  body {
+    line-height: 1.5;
+  }
+}

@@ -5,36 +5,42 @@ main {
 }
 
 .main-container {
-  width: 80%;
+  width: 80%; // використано відносну ширину
+
+  .separator {
+    margin-top: 10rem;
+    width: 100%;
+    border: 1px solid gray;
+  }
 
   &__header {
     display: flex;
 
     header {
-      margin-top: 55px;
+      margin-top: 3.5rem; // використано rem для відстаней
       h1 {
-        font-size: $primary-font-size;
+        font-size: 3rem; // використано rem
         font-weight: bold;
       }
       p {
-        margin-top: 15px;
-        font-size: $secondary-font-size;
+        margin-top: 1rem;
+        font-size: 1.2rem; // використано rem
       }
     }
 
     .button-container {
-      margin-top: 70px;
+      margin-top: 4.5rem;
 
       p {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 1.125rem; // використано rem
       }
 
       button {
-        padding: 10px 30px;
-        border-radius: 30px;
+        padding: 0.625rem 1.875rem; // використано rem
+        border-radius: 1.875rem; // використано rem
         font-weight: bold;
-        font-size: 22px;
+        font-size: 1.375rem; // використано rem
         background-color: $button-primary-color;
         color: $text-primary-color;
         border: none;
@@ -44,20 +50,20 @@ main {
 
   .finance-section {
     display: flex;
-    margin-top: 190px;
+    margin-top: 12rem;
     align-items: center;
 
     .finance-text {
-      margin-left: 100px;
+      margin-left: 6.25rem; // використано rem
       h2 {
-        font-size: $section-title-size;
+        font-size: 2.5rem; // використано rem
         font-weight: bold;
         line-height: 1;
       }
 
       p {
-        margin-top: 30px;
-        font-size: $secondary-font-size;
+        margin-top: 2rem;
+        font-size: 1.2rem; // використано rem
       }
 
       span {
@@ -68,28 +74,28 @@ main {
   }
 
   .why-switch {
-    margin-top: 240px;
+    margin-top: 15rem;
 
     h2 {
-      font-size: $section-title-size;
+      font-size: 2.5rem; // використано rem
       font-weight: bold;
     }
 
     &__cards-container {
       display: flex;
-      margin-top: 75px;
-      gap: 60px;
+      margin-top: 4.7rem;
+      gap: 3.75rem; // використано rem
 
       .card {
-        max-width: 300px;
+        max-width: 18.75rem; // використано rem
 
         h3 {
           font-weight: bold;
-          margin-top: 30px;
+          margin-top: 1.875rem; // використано rem
         }
 
         p {
-          font-size: $card-text-size;
+          font-size: 1rem; // використано rem
           line-height: 1.3;
 
           span {
@@ -101,65 +107,56 @@ main {
     }
 
     button {
-      margin-top: 55px;
-      padding: 10px 33px;
-      border-radius: 30px;
+      margin-top: 3.5rem;
+      padding: 0.625rem 2.0625rem;
+      border-radius: 1.875rem;
       font-weight: bold;
-      font-size: $button-font-size;
+      font-size: 1.375rem;
       background-color: $button-secondary-color;
       color: $text-secondary-color;
       border: none;
     }
   }
 
-  .plans-for-growth__background {
-    position: absolute;
-    top: 2010px;
-    left: 0;
-    width: 100%;
-    height: 700px;
-    background-color: $plans-section-background-color;
-}
-
   .plans-for-growth {
     position: relative;
-    margin-top: 127px;
-    padding-top: 80px;
+    margin-top: 8rem;
+    padding-top: 5rem;
     h2 {
-      font-size: 60px;
+      font-size: 3.75rem; // використано rem
     }
 
     &__cards-container {
       display: flex;
-      margin-top: 80px;
-      gap: 60px;
+      margin-top: 5rem;
+      gap: 3.75rem; // використано rem
 
       .card {
-        max-width: 300px;
+        max-width: 18.75rem; // використано rem
 
         h3 {
-          margin-top: 20px;
+          margin-top: 1.25rem; // використано rem
           font-weight: bold;
         }
 
         p {
-          font-size: $card-text-size;
+          font-size: 1rem; // використано rem
           line-height: 1.3;
         }
       }
     }
   }
 
-  .partners{
+  .partners {
     display: flex;
-    margin-top: 160px;
+    margin-top: 10rem;
 
     &__text-container {
-      margin-top: 55px;
-      max-width: 350px;
+      margin-top: 3.5rem;
+      max-width: 21.875rem; // використано rem
 
       h2 {
-        font-size: 26px;
+        font-size: 1.625rem; // використано rem
       }
     }
   }
@@ -168,24 +165,24 @@ main {
     display: flex;
 
     &__text-container {
-      margin-top: 250px;
+      margin-top: 15rem;
 
       h2 {
         font-weight: bold;
-        font-size: 60px;
+        font-size: 3.75rem; // використано rem
       }
 
       p {
-        margin-top: 33px;
-        font-size: $secondary-font-size;
+        margin-top: 2rem;
+        font-size: 1.2rem; // використано rem
       }
 
       button {
-        margin-top: 55px;
-        padding: 10px 33px;
-        border-radius: 30px;
+        margin-top: 3.5rem;
+        padding: 0.625rem 2.0625rem; // використано rem
+        border-radius: 1.875rem; // використано rem
         font-weight: bold;
-        font-size: $button-font-size;
+        font-size: 1.375rem; // використано rem
         background-color: $button-secondary-color;
         color: $text-secondary-color;
         border: none;
@@ -193,38 +190,363 @@ main {
     }
 
     &__image-container {
-      margin-top: 180px;
+      margin-top: 11.25rem; // використано rem
     }
   }
 
   .ready-to-switch {
     display: flex;
     align-items: center;
-    padding: 85px;
-    margin-top: 180px;
-    margin-bottom: 100px;
-    border-radius: 10px;
+    padding: 5.3125rem;
+    margin-top: 11.25rem;
+    margin-bottom: 6.25rem; // використано rem
+    border-radius: 0.625rem; // використано rem
     background-color: $switch-section-background-color;
 
     h2 {
       font-weight: bold;
-      font-size: 45px;
+      font-size: 2.8125rem; // використано rem
     }
 
     p {
-      margin-top: 20px;
-      font-size: $secondary-font-size;
+      margin-top: 1.25rem;
+      font-size: 1.2rem; // використано rem
     }
 
     button {
-      margin-left: 240px;
-      padding: 10px 30px;
-      border-radius: 30px;
+      margin-left: 12rem;
+      padding: 0.625rem 1.875rem; // використано rem
+      border-radius: 1.875rem; // використано rem
       font-weight: bold;
-      font-size: $button-font-size;
+      font-size: 1.375rem; // використано rem
       background-color: $button-primary-color;
       color: $text-primary-color;
       border: none;
+    }
+  }
+}
+
+// --- Responsive Design ---
+
+// For Tablets (max-width: 1024px)
+@media (max-width: 1024px) {
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-container {
+    width: 90%;
+  }
+
+  .main-container__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .button-container {
+      margin-top: 3rem;
+    }
+  }
+
+  .finance-section {
+    flex-direction: column;
+    margin-top: 6rem;
+    align-items: center;
+
+    .finance-text {
+      margin-left: 0 !important;
+      text-align: center;
+    }
+  }
+
+  .why-switch {
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__cards-container {
+      flex-direction: column;
+      margin-top: 2rem;
+      gap: 2rem;
+    }
+
+    button {
+      margin-top: 2rem;
+    }
+  }
+
+  .plans-for-growth {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__cards-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .partners {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__text-container {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .dedicated-resources {
+    flex-direction: column;
+    align-items: center;
+
+    &__text-container {
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    &__image-container {
+      margin-top: 3rem;
+    }
+  }
+
+  .ready-to-switch {
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+
+    button {
+      margin-left: 0 !important;
+      margin-top: 2rem;
+    }
+  }
+}
+
+// For Phones (max-width: 768px)
+@media (max-width: 768px) {
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .main-container__header {
+    margin-top: 2rem;
+
+    .button-container {
+      margin-top: 2rem;
+    }
+  }
+
+  .finance-section {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    .finance-text {
+      margin-left: 0 !important;
+      text-align: center;
+    }
+  }
+
+  .why-switch {
+    margin-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+
+    &__cards-container {
+      flex-direction: column;
+      margin-top: 1rem;
+      gap: 1.5rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .plans-for-growth {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__cards-container {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  .partners {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__text-container {
+      margin-top: 1rem;
+    }
+  }
+
+  .dedicated-resources {
+    flex-direction: column;
+    align-items: center;
+
+    &__text-container {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    &__image-container {
+      margin-top: 2rem;
+    }
+  }
+
+  .ready-to-switch {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+
+    button {
+      margin-left: 0 !important;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+// For Small Screens (max-width: 480px)
+@media (max-width: 480px) {
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .main-container__header {
+    text-align: center;
+    margin-top: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .finance-section {
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+
+    .finance-text {
+      margin-left: 0 !important;
+      text-align: center;
+    }
+  }
+
+  .why-switch {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+
+    &__cards-container {
+      flex-direction: column;
+      margin-top: 1rem;
+      gap: 1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+
+  .plans-for-growth {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__cards-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  .partners {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__text-container {
+      margin-top: 1rem;
+    }
+  }
+
+  .dedicated-resources {
+    flex-direction: column;
+    align-items: center;
+
+    &__text-container {
+      margin-top: 2.5rem;
+      text-align: center;
+    }
+
+    &__image-container {
+      margin-top: 2rem;
+    }
+  }
+
+  .ready-to-switch {
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+
+    &__button {
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+      }
     }
   }
 }
